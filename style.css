@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 19px;
+  /*margin-right: 300px;*/
+}
+
+.logo__image {
+  width: 70px;
+  height: 60px;
+  margin-left: 120px;
+}
+
+.logo__title {
+  /*margin-top: 19px;*/
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 19px;
+  margin-left: 450px;
+}
+
+.nav__list-item {
+  justify-content: space-around;
+  margin: 0 30px;
+}
+
+.nav__list-link {
+  margin: 2px 11px 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+}
+
+.nav__btn {
+  width: 120px;
+  height: 50px;
+  margin: 0 23px;
+  border: 2px solid #cd6326;
+  border-radius: 5px;
+}
+
+.search {
+  margin-top: 15px;
+}
+
+.sign-in {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.hero {
+  height: 780px;
+  background: url("./assets/hero-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.hero__content {
+  width: 274px;
+  margin-left: 120px;
+}
+
+.hero__title {
+  margin-top: 120px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #cd6326;
+}
+
+.hero__text {
+  margin-top: 51px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f7f7f7;
+}
+
+.hero__button {
+  margin-top: 49px;
+  width: 160px;
+  height: 60px;
+  background: #cd6326;
+  border: 2px solid #cd6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
+}
