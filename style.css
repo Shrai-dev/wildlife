@@ -16,11 +16,18 @@ body {
   align-items: center;
 }
 
-.logo {
+.header__wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 19px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*margin-top: 19px;*/
   /*margin-right: 300px;*/
 }
 
@@ -47,17 +54,17 @@ body {
   flex-direction: row;
   align-items: center;
   list-style-type: none;
-  margin-top: 19px;
-  margin-left: 450px;
+  /*margin-top: 19px;*/
+  margin-left: 410px;
 }
 
 .nav__list-item {
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 30px;
 }
 
 .nav__list-link {
-  margin: 2px 11px 0;
+  margin: 2px 22px 0;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -65,24 +72,21 @@ body {
   font-size: 23px;
   line-height: 60px;
   color: #f7f7f7;
+  position: inherit;
+  top: -9px;
 }
 
-.nav__btn {
+.nav__list-item:last-child {
   width: 120px;
   height: 50px;
-  margin: 0 23px;
   border: 2px solid #cd6326;
+  background-color: transparent;
   border-radius: 5px;
+  position: relative;
 }
 
 .search {
   margin-top: 15px;
-}
-
-.sign-in {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    text-align: center;
 }
 
 .hero {
@@ -131,4 +135,58 @@ body {
   line-height: 27px;
   text-align: center;
   color: #f7f7f7;
+}
+
+.footer {
+  height: 359px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/footer-bg.jpg);
+}
+
+.contacts {
+  margin: 0 120px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  /*justify-content: space-around;*/
+}
+
+.contacts__list-item {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+}
+
+.contacts__list-item:nth-child(even) {
+  margin: 0 86px;
+}
+
+.contacts__list-link {
+  text-decoration: none;
+}
+
+.social {
+  margin-right: 120px;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.social__list-item:nth-child(3) {
+  margin-left: 27px;
+}
+.social__list-item:nth-child(even) {
+  margin-left: 27px;
 }
